@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArenA Resmi Web Sayfası</title>
+    <link rel="stylesheet" href="arena.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Ubuntu:ital,wght@0,300;0,700;1,300;1,700&display=swap"
+    rel="stylesheet">
+<!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+    <div class="container">
+        <header>
+            <span class="title">
+                <!--<i class="fa fa-cube"></i>--><img class="logo" src="images/logoAs.png">&nbsp;/\ren/\
+            </span>
+
+
+
+            <!--Navbar-->
+            <nav>
+                <ul>
+                    <li><a class="navOpt" href="#home">Ana Sayfa</a></li>
+                    <li><a class="navOpt" href="#gallery">Galeri</a></li>
+                    <li><a class="navOpt" href="#about">Hakkımızda</a></li>
+                    <li><a class="navOpt" id="open" href="#contact">İletişim</a></li>
+                </ul>
+            </nav>
+            <div class="switch-btn">
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="label">
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
+
+            <!--Açılır Pencere ile İletişim kısmı-->
+            <div id="contact" class="modal">
+                <div class="modal-content animate-top">
+                    <div class="box center padding-32">
+                        <span id="close-1" class="btn cColor xlarge display-topright">X</span>
+                        <h2 class="margin-right big-2">&nbsp; İLETİŞİM</h2>
+                    </div>
+                    <div class="partArea">
+                        <div class="formSide">
+                            <h3><i class="fa fa-envelope"></i> Bize e-posta yoluyla ulaşabilirsiniz</h3>
+                            <form>
+                                <input type="text" name="name" id="name" placeholder="Adınız">
+                                <input type="text" name="surname" id="surname" placeholder="Soydınız">
+                                <input type="email" name="email" id="email" placeholder="E-Posta Adresiniz">
+                                <input type="text" maxlength="10" name="phone" id="phone" placeholder="(5__) ___ __ __"
+                                    oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
+                                <textarea name="message" autofocus id="message" cols="30" rows="10"
+                                    placeholder="Mesajınız..."></textarea>
+                                <input type="submit" value="Gönder">
+                            </form>
+                        </div>
+                        <div class="address">
+                            <h2>Dilerseniz adresimize uğrayabilir veya bizi arayabilirsiniz</h2>
+
+                            <h3><i class="fa fa-map-location"></i><u>&nbsp; Adresimiz</u></h3>
+                            <p>3D Bükücü Mah. Limy Dick Cad. Kaybedenler Kulübü İş Merkezi Kat:3 No.17</p>
+                            <h3><i class="fas fa-phone"></i><u>&nbsp; Telefon Numaramız</u></h3>
+                            <p class="big">(0332) 257 31 69</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Slider Kısmı-->
+        </header>
+    <div class="slider">
+        <div class="slider-container">
+
+                    <img src="images/1.jpeg" style="width:100%">
+
+                    <img src="images/2.jpeg" style="width:100%">
+
+                    <img src="images/3.jpeg" style="width:100%">
+
+                    <img src="images/4.jpeg" style="width:100%">
+
+                    <img src="images/5.jpeg" style="width:100%">
+
+                    <img src="images/6.jpeg" style="width:100%">
+
+                    <img src="images/7.jpeg" style="width:100%">
+
+                    <img src="images/8.jpeg" style="width:100%">
+
+                    <img src="images/9.jpeg" style="width:100%">
+
+                    <img src="images/10.jpeg" style="width:100%">
+
+                    <img src="images/11.jpeg" style="width:100%">
+
+                    <img src="images/12.jpeg" style="width:100%">
+
+                    <img src="images/13.jpeg" style="width:100%">
+
+                    <img src="images/14.jpeg" style="width:100%">
+
+                    <img src="images/15.jpeg" style="width:100%">
+
+                    <img src="images/16.jpeg" style="width:100%">
+
+                    <img src="images/17.jpeg" style="width:100%">
+
+                    <img src="images/18.jpeg" style="width:100%">
+
+                    <img src="images/19.jpeg" style="width:100%">
+
+                    <img src="images/20.jpeg" style="width:100%">
+
+                </div>
+
+                <div class="play-pause">
+                    <div class="play-pause-btn">
+                        <img id="animate-btn" src="images/Pause.png">
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <a class="prev">❮</a>
+                    <a class="next">❯</a>
+                    
+                </div>
+            
+
+            <div class="thumbs">
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo " src="images/1.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/2.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/3.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/4.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/5.jpeg" >
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo " src="images/6.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/7.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/8.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/9.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/10.jpeg" >
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo " src="images/11.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/12.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/13.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/14.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/15.jpeg" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img class="demo " src="images/16.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/17.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/18.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/19.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/20.jpeg" ">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-us" id="about">
+            <section>
+                <h2>Hakkımızda</h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum fugiat eius laborum dicta ipsum. Earum
+                ipsum, velit voluptatibus ipsam saepe vitae in enim fugit? Sunt exercitationem nulla nobis perspiciatis
+                aut. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Eum fugiat eius laborum dicta ipsum. Earum ipsum, velit voluptatibus ipsam saepe vitae in enim
+                fugit? Sunt exercitationem nulla nobis perspiciatis aut. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Eum fugiat eius laborum
+                dicta ipsum. Earum ipsum, velit voluptatibus ipsam saepe vitae in enim fugit? Sunt exercitationem nulla
+                nobis perspiciatis aut.
+
+            </section>
+            <aside>
+                <h2>Örnek projelerimizden biri</h2>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ja8cXs7JQhY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </aside>
+        </div>
+    </div>
+       
+        <!-- <main>
+            <h1 class="gallery-header">Galeri</h1>
+            <hr class="splt">
+            <div class="slider">
+                <div class="slider-container">
+
+                    <img src="images/1.jpeg" style="width:100%">
+
+                    <img src="images/2.jpeg" style="width:100%">
+
+                    <img src="images/3.jpeg" style="width:100%">
+
+                    <img src="images/4.jpeg" style="width:100%">
+
+                    <img src="images/5.jpeg" style="width:100%">
+
+                    <img src="images/6.jpeg" style="width:100%">
+
+                    <img src="images/7.jpeg" style="width:100%">
+
+                    <img src="images/8.jpeg" style="width:100%">
+
+                    <img src="images/9.jpeg" style="width:100%">
+
+                    <img src="images/10.jpeg" style="width:100%">
+
+                    <img src="images/11.jpeg" style="width:100%">
+
+                    <img src="images/12.jpeg" style="width:100%">
+
+                    <img src="images/13.jpeg" style="width:100%">
+
+                    <img src="images/14.jpeg" style="width:100%">
+
+                    <img src="images/15.jpeg" style="width:100%">
+
+                    <img src="images/16.jpeg" style="width:100%">
+
+                    <img src="images/17.jpeg" style="width:100%">
+
+                    <img src="images/18.jpeg" style="width:100%">
+
+                    <img src="images/19.jpeg" style="width:100%">
+
+                    <img src="images/20.jpeg" style="width:100%">
+
+                </div>
+
+                <div class="buttons">
+                    <a class="prev">❮</a>
+                    <a class="next">❯</a>
+                </div>
+            </div>
+            <div class="thumbs">
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo " src="images/1.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/2.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/3.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/4.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/5.jpeg" >
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo " src="images/6.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/7.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/8.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/9.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/10.jpeg" >
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo " src="images/11.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/12.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/13.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/14.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/15.jpeg" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img class="demo " src="images/16.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/17.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/18.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/19.jpeg" >
+                    </div>
+                    <div class="column">
+                        <img class="demo " src="images/20.jpeg" ">
+                    </div>
+                </div>
+            </div>
+        </main> -->
+    </div>
+
+
+
+    <script src="arenaJava.js"></script>
+    <script type="module" src="/app.js"></script>
+</body>
+<template>
+    <div class="buttons">
+        <a class="prev">❮</a>
+        <a class="next">❯</a>
+    </div>
+</template>
+
+</html>

@@ -1,0 +1,85 @@
+@media(max-width:735px) {
+    .logo {
+        margin-left: 15px;
+    }
+    .about-us {
+        flex-direction: column;
+    }
+    aside {
+        margin-top: 25px;
+    }
+    ul li a:active {
+        font-size: 1.1rem;
+        color: red;
+    }
+    .active {
+        transition: all 0.4s ease;
+        color: red !important;
+        font-size: 1.1rem;
+    }
+    ul li a:hover {
+        color: red;
+        font-size: 1.3rem;
+    }
+
+    
+}
+
+@media(max-width:719px) {
+    .modal-content {
+        width: 500px;
+    }
+    .partArea {
+        flex-direction: column;
+        height: 80%;
+    }
+    .modal {
+        overflow: auto;
+    }
+
+    .thumbs{
+        padding:7px;
+    }
+
+    .column{
+        padding:8px;
+    }
+
+    .play-pause{
+        top:38%;
+    }
+}
+
+@media(max-width:420px) {
+    .modal-content {
+        width: 300px;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .play-pause{
+        top:42%;
+        height:10%
+    }
+
+    .column{
+        padding:8px;
+    }
+
+    .thumbs{
+        padding:0;
+    }
+}
+
+@media(min-width:735px) {
+    .play-pause{
+        top:46%;
+        
+    }
+}
